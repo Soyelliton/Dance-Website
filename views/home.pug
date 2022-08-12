@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style 
+        include ../static/style.css
+
+block content
+        section#introScetion
+            div Welcome to Soyel's Dance Academy
+            div.small Eat Sleep Dance Repeat
+        
+        section#missionScetion
+            h2  Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/niBE7a5dT.jpg")
+                    div.card-content
+                        p This is the best dance academy of the universe
+            div.card
+                h3 Dance the way wou like
+                div.card-box
+                    div.card-img
+                        img(src="/static/dance-clipart-logo-7.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img
+                        img(src="/static/dance-clipart-vector-free-20.jpg")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+        section#sponsorsScetion
+            h2  Our Sponsors
+            div#sponsors
+                img(src="/static/DID-.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/Delhi-Dance-Academy.jpg", alt="Sponsor Image", class="spImage")
+                img(src="/static/96678540_1668044736678917_7813786898706464768_n.jpg", alt="Sponsor Image", class="spImage")
+                img(src="/static/studio_logo_9C74DA7BEEB9B9.png", alt="Sponsor Image", class="spImage")
+        script 
+            include ../static/index.js
